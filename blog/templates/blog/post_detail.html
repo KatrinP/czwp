@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+     <div class="post post_detail">
+        <div class="divide_row">&nbsp;</div>
+        <div class="pl_div">
+            <h2><a href="{% url 'post_detail' pk=post.pk %}" class="title_text">{{ post.title_pl }}</a></h2>
+            <p> {{ post.get_pl_date }}</p>
+
+            <div class="pl_text">{{ post.text_pl|safe }}</div>
+        </div>
+        <div class="cz_div">
+            <h2><a href="{% url 'post_detail' pk=post.pk %}" class="title_text">{{ post.title_cz }}</a></h2>
+            <p>{{ post.get_cz_date }}</p>
+            <div class="cz_text">{{ post.text_cz|safe }}</div>
+        </div>
+        <div class="prev_next_arrows">
+            {% if post.pk > 1  %}
+            <div class="first"><a href="/1"><i class="fa fa-angle-double-left fa-2x"></i></a></div>
+            <div class="prev"><a href='/{{ post.pk|add:"-1"}}'><i class="fa fa-chevron-left fa-2x"></i></a></div>
+            {% endif %}
+            {% if post.pk < last.pk %}
+            <div class="last"><a href="/{{ last.pk }}"><i class="fa fa-angle-double-right fa-2x"></i></a></div>
+            <div class="next"><a href='/{{ post.pk|add:"1"}}'><i class="fa fa-chevron-right fa-2x"></i></a></div>
+            {% endif %}
+        </div>
+    </div>
+
+
+{% endblock %}

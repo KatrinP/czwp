@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Czeszka w Polsce</title>
+
+        <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <!--external css-->
+    <link href="{% static 'font-awesome/css/font-awesome.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{% static 'js/gritter/css/jquery.gritter.css' %}" />
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="page-header">
+            <div class="logo"><a href="/"> <img src="{% static 'img/logo.jpg' %}" width="400px"> </a> </div>
+            <div class="header_img"><img src="{% static 'img/header.jpg' %}"> </div>
+        </div>
+
+        <div class="content container body_content">
+            <div class="row">
+                <div class="col-md-10">
+                    {% block content %}
+                    {% endblock %}
+
+                </div>
+                <div class="col-md-2 side_info">
+                    <h3>Katrin Přikrylová</h3>
+                    <p>Żyję w Polsce rok. Jest ona prawie takim samym krajem jak Czechy. Po prostu. A czasami nie.
+                        Czasami jest to aż zaskakujące, jakie różnice istnieją między Polakami i Czechami.</p>
+                    <p>Žiju v Polsku rok. Je to téměř stejná země jako Česko. Obvykle. A občas ne. Občas je
+                       překvapující, jaké jsou mezi Čechy a Poláky rozdíly.</p>
+                </div>
+                <div class="col-md-2 ahoj">
+                     <p>Chcesz się nauczyć czeskiego?</p>
+                    <a href="http://www.ahoj.edu.pl/"> <img src="{% static 'img/ahoj.jpg' %}" width="150px"></a>
+                 </div>
+                 <div class="col-md-5"></div>
+            </div>
+
+        </div>
+        <div class="push"></div>
+    </div>
+     <div class="footer">
+         <hr>
+         <div class="content container">
+
+             <div class="row katrin_me">
+                 <div class="col-md-12">
+                     <a href="http://katrin.me">katrin.me</a>
+                 </div>
+             </div>
+         </div>
+    </div>
+    </body>
+</html>
+
+
+
