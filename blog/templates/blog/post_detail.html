@@ -15,7 +15,6 @@
             <div class="cz_text">{{ post.text_cz|safe }}</div>
         </div>
         <div class="prev_next_arrows">
-            {{ last.pk }} : {{ post.pk }}
             {% if post.pk > 1  %}
             <div class="first"><a href="/1"><i class="fa fa-angle-double-left fa-2x"></i></a></div>
             <div class="prev"><a href='/{{ post.pk|add:"-1"}}'><i class="fa fa-chevron-left fa-2x"></i></a></div>

@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 from django.db import models
 from django.utils import timezone
 
@@ -14,7 +16,7 @@ class Post(models.Model):
             blank=True, null=True)
     cz_months = {
         1: "ledna",
-        2: "unora",
+        2: "února",
         3: "brezna",
         4: "dubna",
         5: "kvetna",
