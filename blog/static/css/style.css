@@ -81,7 +81,7 @@ h1, h2, h3, .title_text {
     width: 80%;
 }
 
-.ahoj {
+.ahoj, .FB {
     text-align: center;
     border-top: solid lightgray 1px;
     padding-top: 20px;
