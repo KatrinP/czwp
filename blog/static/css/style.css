@@ -33,6 +33,11 @@ html, body {
     max-width: 28%;
 }
 
+.logo_img {
+    width: 400px;
+    max-width: 28%;
+}
+
 .header_img {
     max-width: 69%;
 }
