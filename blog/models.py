@@ -54,7 +54,7 @@ class Post(models.Model):
         day = self.published_date.day
         month = self.pl_months[self.published_date.month]
         year = self.published_date.year
-        return str(day) + ". " + month + " " + str(year)
+        return str(day) + " " + month + " " + str(year)
 
     def get_cz_date(self):
         day = self.published_date.day

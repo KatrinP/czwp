@@ -29,10 +29,11 @@ html, body {
     float: left;
     padding-left: 3%;
     padding-top: 25px;
+    max-width: 28%;
 }
 
 .header_img {
-    padding-left: 5%;
+    max-width: 69%;
 }
 
 .post {
