@@ -26,6 +26,7 @@ html, body {
     padding-top: 25px;
 }
 .logo {
+    width: 400px;
     float: left;
     padding-left: 3%;
     padding-top: 25px;
