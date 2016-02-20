@@ -41,7 +41,7 @@ INSTALLED_APPS = (
     'blog',
     'django_wysiwyg',
     'ckeditor',
-    'disqus',
+    #'disqus',
 )
 
 MIDDLEWARE_CLASSES = (
