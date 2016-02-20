@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'blog',
     'django_wysiwyg',
     'ckeditor',
+    'disqus',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -113,3 +114,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 DJANGO_WYSIWYG_FLAVOR = "ckeditor"
+
+DISQUS_API_KEY = 'oCgfbdudPcu6zHnIbQZAh8Lzifhfg3ufewftXGOJGRTeNTMI0mmZziWNe4hiTxpi'
+DISQUS_WEBSITE_SHORTNAME = 'czeszkawpolsce'
