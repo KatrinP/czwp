@@ -17,14 +17,14 @@ class Post(models.Model):
     cz_months = {
         1: "ledna",
         2: "února",
-        3: "brezna",
+        3: "března",
         4: "dubna",
-        5: "kvetna",
-        6: "cervna",
-        7: "cervence",
+        5: "května",
+        6: "června",
+        7: "července",
         8: "srpna",
-        9: "zari",
-        10: "rijna",
+        9: "září",
+        10: "října",
         11: "listopadu",
         12: "prosince"
     }
